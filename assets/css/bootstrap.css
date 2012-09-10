@@ -34,7 +34,8 @@ audio:not([controls]) {
 }
 
 html {
-  font-size: 100%;
+    background: "../images/background-sketches.jpg"
+    font-size: 100%;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -158,12 +159,19 @@ textarea {
 }
 
 body {
+  background: url(../../images/background-sketches.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100%;
+  background-repeat: repeat-x;
+  background-position: 0px 65px;
+  
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
-  color: #333333;
-  background-color: #ffffff;
+  color: #cccccc;
 }
 
 a {
