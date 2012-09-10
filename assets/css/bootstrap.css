@@ -3224,12 +3224,12 @@ input[type="button"].btn-block {
 }
 
 .btn-warning {
-  color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  color: #85592E
+  text-shadow: 1px 1px 0 rgba(255, 249, 90, 0.25);
   background-color: #faa732;
   *background-color: #f89406;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
-  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image: -webkit-linear-gradient(top, #ffd96a, #ffa50b);
   background-image: -o-linear-gradient(top, #fbb450, #f89406);
   background-image: linear-gradient(to bottom, #fbb450, #f89406);
   background-image: -moz-linear-gradient(top, #fbb450, #f89406);
