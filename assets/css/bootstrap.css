@@ -34,8 +34,6 @@ audio:not([controls]) {
 }
 
 html {
-    /*!    background: "../images/background-sketches.jpg" */
-    background: "../images/background_with_frankfurt_borse.png"
     font-size: 100%;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
@@ -161,11 +159,12 @@ textarea {
 
 body {
 /*!  background: url(../../images/background-sketches.jpg); */
-    background: url(../../images/background_with_frankfurt_borse_dark_gradient.png);
+/*    background: url(../../images/background_with_frankfurt_borse.png); */
+    background: url(../../images/background_top_radial_gradient.png);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: 60%;
+  background-size: 100%;
   background-repeat: repeat-x;
   background-position: 0px 65px;
   
@@ -643,10 +642,11 @@ h4,
 h5,
 h6 {
   margin: 10px 0;
-  font-family: inherit;
-  font-weight: bold;
+  font-family: 'Myriad Pro';
+  font-weight: lighter;
   line-height: 1;
-  color: inherit;
+  color: #ffffff;
+  letter-spacing: -1px;
   text-rendering: optimizelegibility;
 }
 
@@ -662,16 +662,19 @@ h6 small {
 }
 
 h1 {
-  font-size: 36px;
+  text-shadow: 2px 3px black;
+  font-size: 48px;
   line-height: 40px;
 }
 
 h2 {
-  font-size: 30px;
+  color: #aaaaaa;
+  font-size: 38px;
   line-height: 40px;
 }
 
 h3 {
+  color: #aaaaaa;
   font-size: 24px;
   line-height: 40px;
 }
