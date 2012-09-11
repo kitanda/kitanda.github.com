@@ -36,3 +36,22 @@
 
 .mainitem:hover h2 { color: #ffffff; }
 .mainitem:hover h3 { color: #ffffff; }
+
+.inverse_header {
+  color: #ffffff;
+  text-shadow: 2px 3px black;
+}
+
+.inverse_h2_3 {
+  color: #eeccdd;
+}
+
+.Myriad {
+  font-family: MyriadPro-Light;
+  font-weight: lighter;
+  letter-spacing: -1px;
+}
+
+.inverse_body {
+  color: #cccccc;
+}
