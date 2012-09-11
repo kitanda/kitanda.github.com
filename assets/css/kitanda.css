@@ -1,7 +1,7 @@
 .splash {
-    float: center;
+    margin: auto;
     width: 1000px;
-    height: 500px;
+    height: 450px;
 }
 
 .splashimage {
@@ -11,21 +11,22 @@
 }
 
 .maintitle {
+    font-size: 58px;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
 
 .mainitem {
     float:left;
-    width:430px;
+    width:450px;
     padding-left: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 .mainitemscontainer {
     float: right;
-    width: 450px;
+    width: 470px;
     height: 300px;
 }
 
@@ -42,14 +43,23 @@
   text-shadow: 2px 3px black;
 }
 
-.inverse_h2_3 {
-  color: #eeccdd;
+.inverse_h2 {
+    font-size: 36px;
+    padding-bottom: 1px;
+    color: #cccccc;
+}
+
+.inverse_h3 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    padding-bottom: 20px;
+    color: #cccccc;
 }
 
 .Myriad {
   font-family: MyriadPro-Light;
   font-weight: lighter;
-  letter-spacing: -1px;
 }
 
 .inverse_body {
