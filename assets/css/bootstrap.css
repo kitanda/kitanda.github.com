@@ -171,8 +171,8 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: 100%;
-  background-repeat: repeat-x;
+  background-size: 100% 350px;
+  background-repeat: no-repeat;
   background-position: 0px 65px;
   
   margin: 0;
