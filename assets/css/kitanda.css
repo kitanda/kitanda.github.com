@@ -1,14 +1,13 @@
 .splash {
     float: center;
-    width: 950px;
+    width: 1000px;
     height: 500px;
 }
 
 .splashimage {
     float: left;
     width: 500px;
-    height: 350px;
-    background-color: #00ff00
+    height: 300px;
 }
 
 .maintitle {
@@ -21,11 +20,13 @@
     float:left;
     width:430px;
     padding-left: 10px;
+    padding-bottom: 20px;
 }
 
 .mainitemscontainer {
     float: right;
     width: 450px;
+    height: 300px;
 }
 
 .mainitem:hover {
