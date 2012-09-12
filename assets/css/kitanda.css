@@ -58,9 +58,17 @@
     color: #cccccc;
 }
 
-.Myriad {
+.myriad-light {
   font-family: MyriadPro-Light;
   font-weight: lighter;
+}
+
+.myriad-regular {
+  font-family: MyriadPro-Regular;
+}
+
+.myriad-bold {
+  font-family: MyriadPro-Bold;
 }
 
 .inverse_body {
