@@ -1,4 +1,4 @@
-/*!
+*!
  * Bootstrap v2.1.1
  *
  * Copyright 2012 Twitter, Inc
@@ -177,7 +177,6 @@ textarea {
 }
 
 body {
-  background: url(../../images/background_lighter_bourse_radial_gradient.png);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

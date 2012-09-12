@@ -1,3 +1,8 @@
+.kitanda_main_header {
+  background: url(../../images/background_lighter_bourse_radial_gradient.png);
+  background-repeat: no-repeat;
+}
+
 .splash {
     margin: auto;
     width: 1000px;
