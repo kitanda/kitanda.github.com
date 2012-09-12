@@ -51,8 +51,9 @@
     color: #ffddee;
 }
 
-.kitanda_burgundy {
-    color: #460032;
+.burgundy_light {
+    color: #600050;
+    font-smooth: always;
 }
 
 .inverse_h3 {
