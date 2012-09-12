@@ -1,3 +1,16 @@
+/* MIME type issue with opentype fonts in Chrome. Nice-to-have. */
+@font-face {
+    font-family: MyriadPro-Light;
+    src: local(MyriadPro-Light),
+         url('../fonts/MyriadPro-Light.otf') format('opentype');
+}
+
+@font-face {
+    font-family: MyriadPro-Regular;
+    src: local(MyriadPro-Regular),
+         url('../fonts/MyriadPro-Regular.otf') format('opentype');
+}
+
 .kitanda_main_header {
   background: url(../../images/background_lighter_bourse_radial_gradient.png);
   background-position: 0px 65px;

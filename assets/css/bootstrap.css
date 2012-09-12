@@ -8,25 +8,6 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 
-/* MIME type issue with opentype fonts in Chrome. Nice-to-have. */
-@font-face {
-    font-family: MyriadPro-Light;
-    src: local(MyriadPro-Light),
-         url('../fonts/MyriadPro-Light.otf') format('opentype');
-}
-
-@font-face {
-    font-family: MyriadPro-Regular;
-    src: local(MyriadPro-Regular),
-         url('../fonts/MyriadPro-Regular.otf') format('opentype');
-}
-
-@font-face {
-    font-family: MyriadPro-Bold;
-    src: local(MyriadPro-Bold),
-         url('../fonts/MyriadPro-Bold.otf') format('opentype');
-}
-
 article,
 aside,
 details,
