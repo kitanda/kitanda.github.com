@@ -4177,6 +4177,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar-inner {
+  text-align:center;
   min-height: 65px;
   padding-right: 20px;
   padding-left: 20px;
@@ -4220,7 +4221,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   display: block;
   float: left;
-  padding: 10px 20px 10px;
+  padding: 10px 20px 0px 100px;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
@@ -4409,7 +4410,9 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar .nav > li {
-  float: left;
+  display: inline-block;
+  *display:inline;
+  vertical-align: -23px;
 }
 
 .navbar .nav > li > a {
@@ -5776,7 +5779,10 @@ a.badge:hover {
 }
 
 .pull-right {
-  float: right;
+  float: none;
+  display: inline-block;
+  *display:inline;
+  vertical-align: -18px;
 }
 
 .pull-left {
