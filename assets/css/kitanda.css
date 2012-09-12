@@ -48,7 +48,18 @@
 .inverse_h2 {
     font-size: 36px;
     padding-bottom: 1px;
-    color: #ffddee;
+}
+
+.fade_triplet_1 {
+    color: #553344;
+}
+
+.fade_triplet_2 {
+    color: #775566;
+}
+
+.fade_triplet_3 {
+    color: #997788;
 }
 
 .inverse_h3 {
