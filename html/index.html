@@ -35,10 +35,11 @@
             image1 = new Image
             image2 = new Image
             image3 = new Image
-            
-            image1.src = "../images/screenshot-app-v0.0.1.png"
-            image2.src = "../images/placeholder2.png"
-            image3.src = "../images/placeholder3.png"
+
+
+            image1.src = "../images/cpp.png"
+            image2.src = "../images/modularity.png"
+            image3.src = "../images/supported_operative_systems.png"
          }
      </script>
   </head>
@@ -83,31 +84,36 @@
     <div class="splash">
         <h1 class="inverse_header myriad-regular maintitle">Bringing Open Source to Finance</h1>
         <div class="splashimage">
-            <table background="../images/chrome_empty_small.png" background-repeat="no-repeat" width="100%" height="100%" align="left" valign="center" class="box_shadow">
+            
+            <img src="../images/modularity.png" name="browser_image_contents" width="380" align="right">
+
+                        <!--
+            <table background="../images/chrome_empty_small.png" background-repeat="no-repeat" width="100%" height="100%" align="left" valign="center" align="right" class="box_shadow">
                 <tr><td valign="bottom">
-                    <img src="../images/screenshot-app-v0.0.1.png" width="512" height="259" name="browser_image_contents" border="0">
+                    <img src="../images/screenshot-app-v0.0.1.png" name="browser_image_contents" width="494">
                     </td>
                 </tr>
             </table>
+-->
         </div>
         <div class="mainitemscontainer">
             <div class="mainitem">
                 <span onMouseover="document.browser_image_contents.src=image2.src"
-                      onMouseout="document.browser_image_contents.src=image1.src">
+                      onMouseout="document.browser_image_contents.src=image0.src">
                     <h2 class="myriad-light inverse_h2">Modular Architecture</h2>
                     <h3 class="myriad-light inverse_h3 inverse_h3">Extend the system with your own components</h3>
                 </span>
             </div>
             <div class="mainitem">
                 <span onMouseover="document.browser_image_contents.src=image1.src"
-                      onMouseout="document.browser_image_contents.src=image1.src">
+                      onMouseout="document.browser_image_contents.src=image0.src">
                     <h2 class="myriad-light inverse_h2">Native From the Ground Up</h2>
                     <h3 class="myriad-light inverse_h3">Built in C++ 11, with a focus on performance</h3>
                 </span>
             </div>
             <div class="mainitem">
                 <span onMouseover="document.browser_image_contents.src=image3.src"
-                      onMouseout="document.browser_image_contents.src=image1.src">
+                      onMouseout="document.browser_image_contents.src=image0.src">
                     <h2 class="myriad-light inverse_h2">Multi-Platform</h2>
                     <h3 class="myriad-light inverse_h3">Designed to run on Windows&trade;, OSX&trade;, and Linux&trade;</h3>
                 </span>
