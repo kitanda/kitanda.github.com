@@ -28,8 +28,16 @@
     float: left;
     width: 500px;
     height: 300px;
+/*    box-shadow: 0px 5px 20px #000000; */
+}
+
+.imageshadow {
+    float: left;
+    width: 500px;
+    height: 300px;
     box-shadow: 0px 5px 20px #000000;
 }
+
 
 .maintitle {
     font-size: 58px;
