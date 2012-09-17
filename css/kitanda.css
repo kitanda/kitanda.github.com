@@ -1,3 +1,78 @@
+/* Refactored from bootstrap.css */
+
+body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  
+  font-size: 16px;
+}
+
+h6 {
+  margin: 1px 0;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 23px;
+}
+
+h2 {
+  font-size: 38px;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 38px;
+  line-height: 20px;
+}
+
+.btn-warning {
+  color: #85592E
+  text-shadow: 1px 1px 0 rgba(255, 249, 90, 0.25);
+  background-image: -webkit-linear-gradient(top, #ffd96a, #ffa50b);
+}
+
+.navbar-inner {
+  text-align:center;
+  min-height: 65px;
+}
+
+.navbar .brand {
+  padding: 10px 20px 0px 100px;
+}
+
+.navbar .nav > li {
+  float: none;
+  font-size: 16px;
+  display: inline-block;
+  *display:inline;
+  vertical-align: -23px;
+}
+
+.navbar-inverse .navbar-inner {
+  background-image: -webkit-linear-gradient(top, #222222, #111111);
+  background-image: linear-gradient(to bottom, #222222, #111111);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#00000000', endColorstr='#ff111111', GradientType=0);
+}
+
+.hero-unit {
+  margin-bottom: 60px;
+}
+
+.hero-unit h1 {
+  font-size: 80px;
+}
+
+.pull-right {
+  float: none;
+  display: inline-block;
+  *display:inline;
+  vertical-align: -18px;
+}
+/* End refactored from bootstrap.css */
+
+
 /* MIME type issue with opentype fonts in Chrome. Nice-to-have. */
 @font-face {
     font-family: MyriadPro-Light;
@@ -87,7 +162,7 @@
 .inverse_h3 {
     font-size: 20px;
     font-weight: bold;
-    line-height: 20px;
+    line-height: 12px;
     padding-bottom: 20px;
     color: #ffddee;
 }

@@ -1,4 +1,4 @@
-*!
+/*!
  * Bootstrap v2.1.1
  *
  * Copyright 2012 Twitter, Inc
@@ -34,7 +34,7 @@ audio:not([controls]) {
 }
 
 html {
-    font-size: 100%;
+  font-size: 100%;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -158,15 +158,12 @@ textarea {
 }
 
 body {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   color: #333333;
+  background-color: #ffffff;
 }
 
 a {
@@ -635,7 +632,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 1px 0;
+  margin: 10px 0;
   font-family: inherit;
   font-weight: bold;
   line-height: 1;
@@ -655,12 +652,12 @@ h6 small {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 36px;
   line-height: 40px;
 }
 
 h2 {
-  font-size: 38px;
+  font-size: 30px;
   line-height: 40px;
 }
 
@@ -670,8 +667,8 @@ h3 {
 }
 
 h4 {
-  font-size: 38px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 20px;
 }
 
 h5 {
@@ -3219,12 +3216,12 @@ input[type="button"].btn-block {
 }
 
 .btn-warning {
-  color: #85592E
-  text-shadow: 1px 1px 0 rgba(255, 249, 90, 0.25);
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #faa732;
   *background-color: #f89406;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
-  background-image: -webkit-linear-gradient(top, #ffd96a, #ffa50b);
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
   background-image: -o-linear-gradient(top, #fbb450, #f89406);
   background-image: linear-gradient(to bottom, #fbb450, #f89406);
   background-image: -moz-linear-gradient(top, #fbb450, #f89406);
@@ -4154,8 +4151,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar-inner {
-  text-align:center;
-  min-height: 65px;
+  min-height: 40px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #fafafa;
@@ -4198,7 +4194,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   display: block;
   float: left;
-  padding: 10px 20px 0px 100px;
+  padding: 10px 20px 10px;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
@@ -4387,9 +4383,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .navbar .nav > li {
-  display: inline-block;
-  *display:inline;
-  vertical-align: -23px;
+  float: left;
 }
 
 .navbar .nav > li > a {
@@ -4573,12 +4567,12 @@ input[type="submit"].btn.btn-mini {
   background-color: #1b1b1b;
   background-image: -moz-linear-gradient(top, #222222, #111111);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#222222), to(#111111));
-  background-image: -webkit-linear-gradient(top, #000000, #000000);
+  background-image: -webkit-linear-gradient(top, #222222, #111111);
   background-image: -o-linear-gradient(top, #222222, #111111);
-  background-image: linear-gradient(to bottom, #010101, #050505);
+  background-image: linear-gradient(to bottom, #222222, #111111);
   background-repeat: repeat-x;
   border-color: #252525;
-  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#00000000', endColorstr='#ff111111', GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
 }
 
 .navbar-inverse .brand,
@@ -5733,7 +5727,7 @@ a.badge:hover {
 
 .hero-unit {
   padding: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   background-color: #eeeeee;
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
@@ -5742,7 +5736,7 @@ a.badge:hover {
 
 .hero-unit h1 {
   margin-bottom: 0;
-  font-size: 80px;
+  font-size: 60px;
   line-height: 1;
   letter-spacing: -1px;
   color: inherit;
@@ -5756,10 +5750,7 @@ a.badge:hover {
 }
 
 .pull-right {
-  float: none;
-  display: inline-block;
-  *display:inline;
-  vertical-align: -18px;
+  float: right;
 }
 
 .pull-left {
