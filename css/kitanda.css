@@ -8,10 +8,6 @@ body {
   font-size: 16px;
 }
 
-h6 {
-  margin: 1px 0;
-}
-
 h1 {
   font-size: 48px;
   line-height: 23px;
@@ -22,10 +18,25 @@ h2 {
   line-height: 24px;
 }
 
-h4 {
-  font-size: 38px;
+h3 {
+  font-size: 28px;
   line-height: 20px;
 }
+
+h4 {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+h5 {
+  font-size: 8px;
+  line-height: 16px;
+}
+
+h6 {
+  margin: 1px 0;
+}
+
 
 .btn-warning {
   color: #85592E
@@ -187,4 +198,65 @@ h4 {
 img {
   border-style: none;
   border-width: 0px;
+}
+
+.square-unit {
+  width: 130px;
+  height: 130px;
+  padding:10px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.square-unit-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height:130px;
+}
+
+
+.green-unit {
+  background-color: #008C00;
+  color: #ffffff
+}
+
+.yellow-unit {
+  background-color: #ffc521;
+  color: #ffffff
+}
+
+.red-unit {
+  background-color: #cc0000;
+  color: #ffffff
+}
+
+.gray-description {
+  padding: 35px;
+  margin-bottom: 30px;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.products1 {
+  padding: 20px;
+  background-color: #eeeeee;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.products2 {
+  padding: 20px;
+  background-color: #dddddd;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  margin-top: 20px;
 }
