@@ -243,20 +243,33 @@ img {
   border-radius: 6px;
 }
 
-.products1 {
+.products {
   padding: 20px;
-  background-color: #eeeeee;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
   margin-top: 20px;
 }
 
-.products2 {
-  padding: 20px;
+.products_dogen {
+  background-color: #eeeeee;
+}
+
+.products_dirien {
   background-color: #dddddd;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
-  margin-top: 20px;
+}
+
+
+.biglabel {
+  color: #ffffff;
+  font-size: 21.844px;
+  font-weight: bold;
+  line-height: 24px;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  padding: 1px 4px 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
 }
