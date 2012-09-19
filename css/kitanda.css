@@ -7,7 +7,7 @@ body {
   
   font-size: 16px;
 }
-
+/*
 h1 {
   font-size: 48px;
   line-height: 23px;
@@ -36,7 +36,7 @@ h5 {
 h6 {
   margin: 1px 0;
 }
-
+*/
 
 .btn-warning {
   color: #85592E
@@ -252,11 +252,11 @@ img {
 }
 
 .products_dogen {
-  background-color: #eeeeee;
+  background-color: #cccccc;
 }
 
 .products_dirien {
-  background-color: #dddddd;
+  background-color: #aaaaaa;
 }
 
 
