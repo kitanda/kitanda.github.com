@@ -201,6 +201,7 @@ img {
 }
 
 .square-unit {
+    float: left;
   width: 130px;
   height: 130px;
   padding:10px;
@@ -235,6 +236,7 @@ img {
 }
 
 .gray-description {
+    float: relative;
   padding: 35px;
   margin-bottom: 30px;
   background-color: #eeeeee;
