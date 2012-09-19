@@ -237,7 +237,7 @@ img {
 .gray-description {
   padding: 35px;
   margin-bottom: 30px;
-  background-color: #eeeeee;
+  background-color: #f9f9f9;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -249,12 +249,13 @@ img {
   -moz-border-radius: 12px;
   border-radius: 12px;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .products_dogen {
-  background-color: #cccccc;
+  background-color: #eeeeee;
 }
 
 .products_dirien {
-  background-color: #aaaaaa;
+  background-color: #eeeeee;
 }
