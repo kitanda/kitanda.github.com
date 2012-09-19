@@ -258,18 +258,3 @@ img {
 .products_dirien {
   background-color: #aaaaaa;
 }
-
-
-.biglabel {
-  color: #ffffff;
-  font-size: 21.844px;
-  font-weight: bold;
-  line-height: 24px;
-  vertical-align: baseline;
-  white-space: nowrap;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  padding: 1px 4px 2px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
