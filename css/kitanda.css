@@ -237,7 +237,7 @@ img {
 .gray-description {
   padding: 35px;
   margin-bottom: 30px;
-  background-color: #f9f9f9;
+  background-color: #eeeeee;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -266,4 +266,14 @@ img {
 
 .paragraph_justified {
   text-align: justify;
+}
+
+/* This overrides Bootstrap's accordion group, so it should be fixed
+   in the future if someone needs to use accordions */
+.accordion-group {
+  margin-bottom: 2px;
+  border: 0px transparent;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
