@@ -264,6 +264,6 @@ img {
   width: 190px;
 }
 
-.justifed {
-  align: justify;
+.paragraph_justified {
+  text-align: justify;
 }
