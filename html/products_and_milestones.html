@@ -83,7 +83,7 @@
 
     <div class="row">
         <div class="container">
-            <div class="row">
+            <div class="row-fluid">
                 <h1>Products</h1>
             </div>
             <div class="row-fluid">
@@ -95,15 +95,17 @@
                 </div>
             </div>
 
-
-            <div class="row">
-                <p>
-                    <img src="../images/application_dogen.png" width="350" alt="Dogen Application Icon" data-toggle="collapse" data-target="#product1" />
-                    <img src="../images/application_dirien.png" width="350" alt="Dirien Application Icon" data-toggle="collapse" data-target="#product2" />
-                </p>
-            </div>
-
-
+            <div class="row-fluid">
+                <div class="span4">
+                    <div class="row" id="dogen_row">
+                        <img src="../images/application_dogen.png" width="350" alt="Dogen Application Icon" data-toggle="collapse" data-target="#product1" data-parent="#product_group" />
+                    </div>
+                    <div class="row" id="dogen_row">
+                        <img src="../images/application_dirien.png" width="350" alt="Dirien Application Icon" data-toggle="collapse" data-target="#product2" data-parent="#product_group" />
+                    </div>
+                </div>
+                <div class="span8" id="product_group">
+                    
             <div id="product1" class="collapse">
                 <div class="row products products_dogen">
                     <div class="row-fluid">
@@ -302,7 +304,11 @@
                     </div>
                 </div>
             </div>
-            
+
+
+
+
+
             <div id="product2" class="collapse">
             <div class="row products products_dirien">
                 <div>
@@ -427,6 +433,17 @@
             </div>
         </div>
         </div>
+
+
+
+
+            
+            
+                </div>
+            </div>
+
+
+            
         
         <hr/>
         <footer>
