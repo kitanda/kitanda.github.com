@@ -154,12 +154,14 @@ h6 {
 .mainitem:hover h3 { color: #ffffff; }
 
 .inverse_header {
+  line-height: 23px;
   color: #ffffff;
   text-shadow: 2px 3px black;
 }
 
 .inverse_h2 {
     font-size: 36px;
+    line-height: 24px;
     padding-bottom: 1px;
     color: #ffddee;
 }
