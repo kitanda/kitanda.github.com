@@ -84,7 +84,9 @@
                 infrastructure, in the same way a standardised Apache server is used
                 to run almost all websites in the world.
             </p>
-            <p><a class="btn btn-primary btn-large">Watch video  &raquo;</a></p>
+            <p>
+                <a class="btn btn-primary btn-large" rel="popover" id="videobutton" title="Kitanda concept video" data-content="The Kitanda Team is preparing a concept video explaining its vision for financial software. Please come back soon or subscribe to our newsletter.">Watch video  &raquo;</a>
+            </p>
         </div>
     </div>
 
@@ -146,6 +148,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../bootstrap/js/jquery.js"></script>
     <script src="../bootstrap/js/bootstrap.js"></script>
-
-  </body>
+    <script>  
+        $(function ()  
+        { $("#videobutton").popover({trigger: 'hover'});  
+        });  
+    </script>
+</body>
 </html>
