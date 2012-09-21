@@ -89,15 +89,19 @@ h6 {
 
 /* MIME type issue with opentype fonts in Chrome. Nice-to-have. */
 @font-face {
-    font-family: MyriadPro-Light;
-    src: local(MyriadPro-Light),
-         url('../fonts/MyriadPro-Light.otf') format('opentype');
+	font-family: 'MyriadPro-Light';
+	src: url('../fonts/MyriadPro-Light.eot');
+	src: url('../fonts/MyriadPro-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro-Light.woff') format('woff'), url('../fonts/MyriadPro-Light.ttf') format('truetype'), url('../fonts/MyriadPro-Light.svg#MyriadPro-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: MyriadPro-Regular;
-    src: local(MyriadPro-Regular),
-         url('../fonts/MyriadPro-Regular.otf') format('opentype');
+	font-family: 'MyriadPro-Regular';
+	src: url('../fonts/MyriadPro-Regular.eot');
+	src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadPro-Regular.woff') format('woff'), url('../fonts/MyriadPro-Regular.ttf') format('truetype'), url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 .kitanda_main_header {
