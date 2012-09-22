@@ -314,3 +314,17 @@ img {
 .navbar-fixed-bottom .container {
   width: 1200px;
 }
+
+.alert-padded {
+  width: 700px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 36px;
+}
+
+.alert .close {
+  position: relative;
+  top: -25px;
+  right: 0px;
+  line-height: 60px;
+}
