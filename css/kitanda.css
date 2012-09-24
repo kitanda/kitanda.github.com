@@ -332,3 +332,7 @@ img {
 .application_icon {
   padding-bottom: 20px;
 }
+
+.collapse {
+overflow: hidden !important;
+}
