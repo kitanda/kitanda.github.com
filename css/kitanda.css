@@ -125,9 +125,10 @@ h6 {
 
 .splashimage {
     float: left;
-    width: 500px;
-    height: 300px;
-/*    box-shadow: 0px 5px 20px #000000; */
+    width: 350px;
+    height: 350px;
+    align: right;
+    padding-left: 140px;
 }
 
 .imageshadow {
