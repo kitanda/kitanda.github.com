@@ -328,3 +328,7 @@ img {
   right: 0px;
   line-height: 60px;
 }
+
+.application_icon {
+  padding-bottom: 20px;
+}
