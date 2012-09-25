@@ -123,6 +123,10 @@ h6 {
     background-size: 100% 410px; /* doesn't work for IE8 */
 
     /* IE8 doesn't support background image sizing, we scale */
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	        src='../images/background_lighter_bourse_radial_gradient.png',
+	        sizingMethod='scale');
+
     -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
               src='../images/background_lighter_bourse_radial_gradient.png',
               sizingMethod='scale')";
