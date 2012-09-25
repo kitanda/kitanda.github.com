@@ -1,1 +1,1 @@
-Try to force a site rebuild
+This is the git repository for the Kitanda website
