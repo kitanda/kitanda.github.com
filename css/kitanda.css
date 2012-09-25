@@ -125,7 +125,7 @@ body {
 }
 
 .mainitemscontainer {
-    width: 470px;
+    width: 480px;
     height: 275px;
     display: inline-block;
     vertical-align: top;
@@ -135,7 +135,7 @@ body {
 
 .mainitem {
     float:left;
-    width:450px;
+    width:470px;
     text-align: left;
     padding-left: 10px;
     padding-bottom: 0px;
