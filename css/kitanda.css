@@ -110,57 +110,23 @@ h6 {
 	font-style: normal;
 }
 
-.kitanda_main_header {
-  background: url(../images/background_lighter_bourse_radial_gradient.png);
-  background-position: 0px 65px;
-  background-repeat: no-repeat;
-
-  background-size: 100% 410px;
-
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-      src='../images/background_lighter_bourse_radial_gradient.png',
-      sizingMethod='crop');
-
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
-      src='../images/background_lighter_bourse_radial_gradient.png',
-      sizingMethod='crop')";
-}
-
 .splash {
+    float: left;
     width: 100%;
     height: 410px;
     margin: 0px;
-    float: left;
-    margin-bottom: 600px;
+    margin-bottom: 100px;
 
+    background: no-repeat center center fixed\0/; /* IE8 HACK */
     background: url(../images/background_lighter_bourse_radial_gradient.png);
     background-repeat: no-repeat;
     background-size: 100% 410px; /* doesn't work for IE8 */
 
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
-            src='../images/background_lighter_bourse_radial_gradient.png',
-            sizingMethod='scale');
-
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    /* IE8 doesn't support background image sizing, we scale */
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(
               src='../images/background_lighter_bourse_radial_gradient.png',
               sizingMethod='scale')";
 }
-
-.splashimage {
-    float: left;
-    width: 350px;
-    height: 350px;
-    align: right;
-    padding-left: 140px;
-}
-
-.imageshadow {
-    float: left;
-    width: 500px;
-    height: 300px;
-    box-shadow: 0px 5px 20px #000000;
-}
-
 
 .maintitle {
     font-size: 58px;
@@ -169,19 +135,35 @@ h6 {
     padding-bottom: 50px;
 }
 
-.mainitem {
-    float:left;
-    width:450px;
-    padding-left: 10px;
-    padding-bottom: 0px;
+.splashcontainer {
+     width: 80%;
+     height: 500px;
+     text-align: center;
+     margin: 0 auto;
+}
+
+.splashimage {
+    width: 350px;
+    height: 350px;
+    display: inline-block;
+    padding-left: 140px;
 }
 
 .mainitemscontainer {
-    float: left;
     width: 470px;
-    height: 300px;
+    height: 275px;
+    display: inline-block;
+    vertical-align: top;
     padding-top: 20px;
     padding-left: 40px;
+}
+
+.mainitem {
+    float:left;
+    width:450px;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 0px;
 }
 
 .mainitem:hover {
@@ -238,6 +220,7 @@ h6 {
 img {
   border-style: none;
   border-width: 0px;
+  vertical-align: baseline;
 }
 
 .square-unit {
