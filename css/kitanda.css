@@ -4,39 +4,8 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  
   font-size: 16px;
 }
-/*
-h1 {
-  font-size: 48px;
-  line-height: 23px;
-}
-
-h2 {
-  font-size: 38px;
-  line-height: 24px;
-}
-
-h3 {
-  font-size: 28px;
-  line-height: 20px;
-}
-
-h4 {
-  font-size: 18px;
-  line-height: 20px;
-}
-
-h5 {
-  font-size: 8px;
-  line-height: 16px;
-}
-
-h6 {
-  margin: 1px 0;
-}
-*/
 
 .btn-warning {
   color: #85592E
@@ -87,7 +56,6 @@ h6 {
 /* End refactored from bootstrap.css */
 
 
-/* MIME type issue with opentype fonts in Chrome. Nice-to-have. */
 @font-face {
 	font-family: 'MyriadPro-Light';
 	src: url('../fonts/myriadpro-light.eot');
@@ -151,6 +119,7 @@ h6 {
     height: 350px;
     display: inline-block;
     padding-left: 140px;
+    /* When scaling in IE, z-indexes get a little confused, we help them by making it explicit*/
     position: relative;
     z-index: 999;
 }
@@ -170,6 +139,7 @@ h6 {
     text-align: left;
     padding-left: 10px;
     padding-bottom: 0px;
+    /* When scaling in IE, z-indexes get a little confused, we help them by making it explicit*/
     position: relative;
     z-index: 999;
 }
@@ -249,7 +219,6 @@ img {
   text-align: center;
   height:130px;
 }
-
 
 .green-unit {
   background-color: #008C00;
