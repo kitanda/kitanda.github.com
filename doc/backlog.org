@@ -1,0 +1,15 @@
+* Backlog
+
+This file contains all stories that haven't been assigned to a sprint.
+
+** Development Stories
+
+*** Add kitanda.co.uk emails to about page
+*** Add entries for all Kitanda staff on about page
+*** Create Google Groups for development and support
+*** Add github buttons to product page:
+
+- Fork me on github
+- Download tar/and zip
+
+Example page: http://fix8.org/
