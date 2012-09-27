@@ -34,3 +34,8 @@ RSS: https://github.com/kitanda/dogen/commits/master.atom
 If merging of feeds is possible we could also have a build feed?
 
 http://kitanda.linkpc.net/cdash/rss/SubmissionRSSdogen.xml
+
+*** Fix Kitanda's logo in Gravatar
+
+The dimensions of the logo in Gravatar do not work very well with our
+logo. We need to create a logo that fits this rectangular shape.
