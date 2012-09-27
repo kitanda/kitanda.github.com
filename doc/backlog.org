@@ -30,3 +30,7 @@ http://kitanda.linkpc.net/org/doxygen/dogen/html/index.html
 *** Consider adding a commit feed to product page
 
 RSS: https://github.com/kitanda/dogen/commits/master.atom
+
+If merging of feeds is possible we could also have a build feed?
+
+http://kitanda.linkpc.net/cdash/rss/SubmissionRSSdogen.xml
