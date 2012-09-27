@@ -39,3 +39,8 @@ http://kitanda.linkpc.net/cdash/rss/SubmissionRSSdogen.xml
 
 The dimensions of the logo in Gravatar do not work very well with our
 logo. We need to create a logo that fits this rectangular shape.
+
+*** Add icons to landing page
+
+- Github icon
+- Open Source icon (OSI)
