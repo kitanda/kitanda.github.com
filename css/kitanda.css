@@ -27,7 +27,7 @@ body {
 
 .navbar .nav > li {
   float: none;
-  font-size: 16px;
+  font-size: 12px;
   display: inline-block;
   *display:inline;
   vertical-align: -23px;
@@ -44,7 +44,7 @@ body {
 }
 
 .hero-unit h1 {
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .pull-right {
@@ -101,7 +101,7 @@ body {
 }
 
 .maintitle {
-    font-size: 58px;
+    font-size: 50px;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 50px;
@@ -159,7 +159,7 @@ body {
 }
 
 .inverse_h2 {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 0px;
     padding-bottom: 20px;
     color: #ffddee;
