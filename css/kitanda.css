@@ -321,3 +321,9 @@ img {
 .collapse {
 overflow: hidden !important;
 }
+
+.downloadbox {
+    text-align: center;
+    padding: 30px;
+}
+
