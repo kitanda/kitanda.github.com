@@ -26,3 +26,7 @@ We should have a link to the doxygen documentation in the product
 page:
 
 http://kitanda.linkpc.net/org/doxygen/dogen/html/index.html
+
+*** Consider adding a commit feed to product page
+
+RSS: https://github.com/kitanda/dogen/commits/master.atom
