@@ -13,3 +13,9 @@ This file contains all stories that haven't been assigned to a sprint.
 - Download tar/and zip
 
 Example page: http://fix8.org/
+
+*** Add CDash buttons to product page
+
+We could have a direct link to the CI for each product.
+
+http://kitanda.linkpc.net/cdash/index.php?project=dogen
