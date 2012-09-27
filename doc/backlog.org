@@ -19,3 +19,10 @@ Example page: http://fix8.org/
 We could have a direct link to the CI for each product.
 
 http://kitanda.linkpc.net/cdash/index.php?project=dogen
+
+*** Add API buttons to product page
+
+We should have a link to the doxygen documentation in the product
+page:
+
+http://kitanda.linkpc.net/org/doxygen/dogen/html/index.html
