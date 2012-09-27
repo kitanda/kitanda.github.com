@@ -327,3 +327,8 @@ overflow: hidden !important;
     padding: 30px;
 }
 
+.footericons {
+    padding-left:100px;
+    padding-right:100px;
+    width: 100px;
+}
