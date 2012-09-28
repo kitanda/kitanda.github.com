@@ -664,14 +664,22 @@
     <script src="../bootstrap/js/jquery.js"></script>
     <script src="../bootstrap/js/bootstrap.js"></script>
     <script>  
-        $(function ()  
-        { $("#dogenicon").popover({trigger: 'hover'});  
-        });  
+        $(function () {
+           $("#dogenicon").popover({trigger: 'hover'}).click(
+              function(){
+                 $(this).popover('hide');
+              }
+           )
+        });
     </script>
     <script>  
-        $(function ()  
-        { $("#dirienicon").popover({trigger: 'hover'});  
-        });  
+        $(function () {
+           $("#dirienicon").popover({trigger: 'hover'}).click(
+              function(){
+                 $(this).popover('hide');
+              }
+           )
+        });
     </script>
   </body>
 </html>
