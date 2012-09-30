@@ -291,13 +291,14 @@ img {
 }
 
 .brand {
-  width: 135px;
+  width: 165px;
+  height: 40px;
 }
 
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 1200px;
+  width: 1160px;
 }
 
 .alert-padded {
@@ -331,4 +332,12 @@ overflow: hidden !important;
     padding-left:100px;
     padding-right:100px;
     width: 100px;
+}
+
+.navbar-inverse .brand { 
+    background-repeat: no-repeat;
+    background: no-repeat center center fixed\0/;
+    background-image: url(../images/kitanda_logo_320.png);
+    background-size: 172px 52px; /* doesn't work for IE8 */
+    margin-top: 5px;
 }
