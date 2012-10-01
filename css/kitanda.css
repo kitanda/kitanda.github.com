@@ -239,7 +239,7 @@ img {
     float: relative;
   padding: 35px;
   margin-bottom: 30px;
-  background-color: #eeeeee;
+  background-color: #f8f8f8;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -280,7 +280,14 @@ img {
   border-radius: 4px;
 }
 
+
+.project_application_icons {
+  text-align: center;
+}
+
+
 .milestone_icon {
+  text-align: center;
   opacity:0.7;
   filter:alpha(opacity=70); /* For IE8 and earlier */
 }
@@ -315,10 +322,6 @@ img {
   line-height: 60px;
 }
 
-.application_icon {
-  padding-bottom: 20px;
-}
-
 .collapse {
 overflow: hidden !important;
 }
@@ -341,3 +344,40 @@ overflow: hidden !important;
     background-size: 172px 52px; /* doesn't work for IE8 */
     margin-top: 5px;
 }
+
+.clean-unit {
+    margin: 40px;
+    padding: 40px;
+    border-style:solid;
+    border-width:2px;
+    border-color: #eeeeee;
+    margin-bottom: 30px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+  
+}
+
+td img{
+    padding: 10px;
+    vertical-align: middle;
+}
+
+
+.table .table-products td  {
+  padding: 40px;
+  line-height:100px;
+  text-align: left;
+  vertical-align: middle;
+  border-top: 1px solid #dddddd;
+}
+
+/*
+.table td {
+  padding: 0px;
+  line-height: 0px;
+  text-align: left;
+  vertical-align: middle;
+  border-top: 1px solid #dddddd;
+}
+*/
