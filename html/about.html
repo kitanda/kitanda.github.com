@@ -99,78 +99,82 @@
         </div>
     </div>
 
-    <div class="row"></div>
-
-    <div class="container">
-        <div class="hero-unit">
-            <h1>Why is Kitanda different?</h1>
-            <h2>Kitanda's core engineering values</h2>
-            <p>We have a core set of engineering values that guide our approach to software development and positively impact our results.</p>
+    <div class="row-fluid">
+        <div class="container">
+            <div class="row-fluid">
+                <h1>Why is Kitanda different?</h1>
+                <!--
+                <p>We have a core set of engineering values that guide our approach to software development and positively impact our results.</p>
+-->
+<br/>
+                <!-- container for three core values -->
+                <div class="row-fluid">
+                    <div class="span4" id="reusability">
+                        <h2 class="inverse_h2 burgundy_light">Reusability</h2>
+                        <p>Kitanda makes use of a wide number of Open Source
+                        libraries that have been tried and tested in production
+                        systems, including those in the financial domain such
+                        as <a href="http://quantlib.org/index.shtml">QuantLib</a>
+                        and <a href="http://www.quickfixengine.org">QuickFIX</a>.
+                        </p>
+                        <p>Continuing the tradition of reusability, we are
+                        structuring the Kitanda platform as a collection of tools
+                        and libraries that can be used independently or in
+                        conjunction; developers can then choose the subset required
+                        to solve specific problems.
+                        </p>
+                        <p> Finally, if you choose to do so, you can always
+                        contribute code - as long as it meets our coding and testing
+                        standards, we are happy to relieve the burden of maintenance
+                        that companies and developers frequently face.</p>
+                    </div>
+                    <div class="span4" id="agility">
+                        <h2 class="inverse_h2 burgundy_light">Agility</h2>
+                        <p>We use agile internally - Scrum to be precise. This means
+                        you can rely on a deliverable every two weeks, without fail,
+                        and you can follow and even influence the coding process
+                        directly. This means we don't have to wait six months to
+                        adapt and correct our course - the feedback is almost
+                        immediate. And you can also watch our demos online.</p>
+                        <p>With agile we are able to avoid the traditional
+                        hierarchical problems that development teams face in
+                        financial environments - at times overly focused on delivery
+                        and time to market, but lacking on the engineering
+                        front. This is not how things are done in Kitanda: We take a
+                        long term view with regards to our architecture and we're
+                        not afraid to refactor aggressively.</p>
+                    </div>
+                    <div class="span4" id="performance">
+                        <h2 class="inverse_h2 burgundy_light">Performance</h2>
+                        <p>We strongly believe that trading systems are very much
+                        like operative systems when it comes to performance: every
+                        cycle counts and small optimisations in a large number of
+                        computations do make a difference. In other words, it is
+                        native territory.</p>
+                        <p>Other languages are great to develop solutions quickly,
+                        but it comes at a cost. From experience, they tend to
+                        struggle when it comes to very large scalability and very
+                        demanding performance.
+                        </p>
+                        <p>We chose <a href="http://en.wikipedia.org/wiki/C%2B%2B11">C++
+                        11</a> as our development language because it introduces so
+                        many of the features found in higher-level languages that we
+                        got so issued to over the years but still follows the C++
+                        principle of "you only pay for what you use".</p>
+                        <p>In addition, due to our architecture and the advent of
+                        modern tooling such
+                        as <a href="http://clang.llvm.org/">Clang</a> and associated
+                        <a href="http://llvm.org/">LLVM</a> infrastructure, we have
+                        managed to greatly reduce our write-compile-debug cycle -
+                        now nearing C#-ReSharper levels.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 
-       <div class="row-fluid">
-           <div class="span4" id="reusability">
-               <h2 class="inverse_h2 burgundy_light">Reusability</h2>
-               <p>Kitanda makes use of a wide number of Open Source
-               libraries that have been tried and tested in production
-               systems, including those in the financial domain such
-               as <a href="http://quantlib.org/index.shtml">QuantLib</a>
-               and <a href="http://www.quickfixengine.org">QuickFIX</a>.
-               </p>
-               <p>Continuing the tradition of reusability, we are
-               structuring the Kitanda platform as a collection of tools
-               and libraries that can be used independently or in
-               conjunction; developers can then choose the subset required
-               to solve specific problems.
-               </p>
-               <p> Finally, if you choose to do so, you can always
-               contribute code - as long as it meets our coding and testing
-               standards, we are happy to relieve the burden of maintenance
-               that companies and developers frequently face.</p>
-           </div>
-           <div class="span4" id="agility">
-               <h2 class="inverse_h2 burgundy_light">Agility</h2>
-               <p>We use agile internally - Scrum to be precise. This means
-               you can rely on a deliverable every two weeks, without fail,
-               and you can follow and even influence the coding process
-               directly. This means we don't have to wait six months to
-               adapt and correct our course - the feedback is almost
-               immediate. And you can also watch our demos online.</p>
-               <p>With agile we are able to avoid the traditional
-               hierarchical problems that development teams face in
-               financial environments - at times overly focused on delivery
-               and time to market, but lacking on the engineering
-               front. This is not how things are done in Kitanda: We take a
-               long term view with regards to our architecture and we're
-               not afraid to refactor aggressively.</p>
-           </div>
-           <div class="span4" id="performance">
-               <h2 class="inverse_h2 burgundy_light">Performance</h2>
-               <p>We strongly believe that trading systems are very much
-               like operative systems when it comes to performance: every
-               cycle counts and small optimisations in a large number of
-               computations do make a difference. In other words, it is
-               native territory.</p>
-               <p>Other languages are great to develop solutions quickly,
-               but it comes at a cost. From experience, they tend to
-               struggle when it comes to very large scalability and very
-               demanding performance.
-               </p>
-               <p>We chose <a href="http://en.wikipedia.org/wiki/C%2B%2B11">C++
-               11</a> as our development language because it introduces so
-               many of the features found in higher-level languages that we
-               got so issued to over the years but still follows the C++
-               principle of "you only pay for what you use".</p>
-               <p>In addition, due to our architecture and the advent of
-               modern tooling such
-               as <a href="http://clang.llvm.org/">Clang</a> and associated
-               <a href="http://llvm.org/">LLVM</a> infrastructure, we have
-               managed to greatly reduce our write-compile-debug cycle -
-               now nearing C#-ReSharper levels.</p>
-           </div>
-       </div>
-       <div class="row"><hr/></div>
-    
+    <hr/>
+
     <div class="row-fluid">
         <div class="container">
             <div class="span2">
