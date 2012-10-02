@@ -61,9 +61,9 @@
               </li>
             </ul>
             <form class="navbar-form pull-right">
-                <a class="btn btn-primary btn-large" href="mailto:info@kitanda.co.uk?subject='I%20want%20to%20be%20notified%20of%20Kitanda%20updates!'">
-                I want to be notified!</a>
-             </form>
+              <a class="btn btn-primary btn-large" href="mailto:info@kitanda.co.uk?subject='I%20want%20to%20be%20notified%20of%20Kitanda%20updates!'">
+                  I want to be notified!</a>
+            </form>
           </div><!--/.nav-collapse -->
         </div><!--/container -->
       </div><!--/.navbar-inner -->
@@ -74,82 +74,605 @@
             <div class="hero-unit">
                 <h1>Products and Milestones</h1>
                 <br/>
-                <p>
-                    Kitanda is a software stack made up of a collection of
-                    services that are designed to work together but
-                    can also be deployed in isolation.
-		    </p>
-			  The vision for the entire stack is cover all key
-			  business aspects including
-			  <strong>Market Data</strong>,
-			  <strong>Pricing</strong>,
-			  <strong>Booking</strong>,
-			  <strong>Risk Management</strong>,
-			  <strong>Reporting</strong> and
-			  <strong>Confirmations</strong>.
-          </p>
+                <p>Kitanda is a software stack made up of a collection
+                of services that are designed to work together and can
+                also be deployed in isolation.  The vision for the
+                entire stack is to cover all key business aspects
+                including Market Data, Pricing, Booking, Risk
+                Management, Reporting and Confirmations.</p>
             </div>
        </div>
     </div>
 
-
     <div class="row-fluid">
         <div class="container unit">
             <div class="row-fluid">
+                <h1>Products</h1>
+            </div>
+            <div class="row-fluid" style="margin-bottom: 60px;">
+                <p>
+                    Kitanda's vision for financial markets is embodied
+                    in two main projects: <span
+                    class="text-info"><strong>Dogen</strong></span>,
+                    Kitanda's code generator, and <span
+                    class="text-info"><strong>Dirien</strong></span>,
+                    the distributed risk engine.
+                    </p>
+                    <p>Below you can find an
+                    overview of the current state of these products,
+                    their main milestones and the development
+                    roadmap. This page is updated at the end of every
+                    <a
+                    href="http://zerodollarbill.blogspot.co.uk/2012/06/how-to-learn-scrum-in-10-minutes-and.html">sprint</a>.
+                </p>
+            </div>
 
-                <table class="table table-striped table-products">
-                    <thead>
-                        <tr>
-                            <th class="cell_190"><strong>Product</strong></th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="cell_190">
-                                <a href="dogen.html">
-                                    <img src="../images/application_dogen_no_shadow.png"
-                                         class="milestone_icon" alt="Dogen Application Icon" width="30%"
-                                         id="dogenicon" /> Dogen
-                                </a>
-                            </td>
-                            <td class="product_desc_table">
-                                <a href="dogen.html"><span class="label label-info">Architecture and milestones</span></a>
-                                Dogen is Kitanda's domain generator,
-                                used to create all of our domain
-                                models.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="cell_190">
-                                <a href="dirien.html">
-                                    <img src="../images/application_dirien_no_shadow.png"
-                                         class="milestone_icon" alt="Dirien Application Icon" width="30%"
-                                         id="dirienicon" /> Dirien
-                                </a>
-                            </td>
-                            <td class="product_desc_table">
-                                <a href="dirien.html"><span class="label label-info">Architecture and milestones</span></a>
-                                Dirien is Kitanda's distributed risk
-                                engine.
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-           </div>
-       </div>  <!-- project_milestone_info -->
-   </div> <!-- container -->
+            <div class="row-fluid" id="project_milestone_info">
+                <div class="span2" id="project_application_icons">
 
-   <hr/>
+                    <div class="row-fluid milestone_icon" id="dogen_row">
+                        <img src="../images/application_dogen_no_shadow.png" alt="Dogen Application Icon" class="application_icon"
+                             data-toggle="collapse" data-target="#first" data-parent="#project_milestone_info"
+                             rel="popover" id="dogenicon" title="<strong>Dogen</strong>" data-content="Dogen is Kitanda's domain generator, used to create all of our domain models. Click here for a summary of the architecture and milestones on development."/>
+                    </div>
+
+                    <div class="row-fluid milestone_icon" id="dirien_row">
+                        <img src="../images/application_dirien_no_shadow.png" alt="Dirien Application Icon" class="application_icon"
+                             data-toggle="collapse" data-target="#second" data-parent="#project_milestone_info"
+                             rel="popover" id="dirienicon" title="<strong>Dirien</strong>" data-content="Dirien is Kitanda's distributed risk engine. Click here for a summary of the architecture and milestones on development."/>
+                    </div>
+
+                </div> <!-- project_application_icons -->
+
+                <div class="accordion-group span10" id="product_milestone_group">
+                    <!-- application information goes here -->
+
+                    <div class="collapse in row_fluid" id="zeroth">
+
+                        <div class="alert alert-info alert-block alert-padded">
+                            <button type="button" class="close" data-dismiss="alert">x</button>
+                            <i class="icon-arrow-left icon-grey"></i> You can
+                            click the <strong>application
+                            icons</strong> on the left to get more
+                            information about a product.</p>
+                        </div>
+                    </div>
+
+                    <div class="collapse indent row_fluid" id="first">
+                        <div class="row-fluid">
+                            <h2>Dogen</h2>
+                            <hr/>
+                            <div class="gray-description">
+                                <strong>Dogen</strong> is a code
+                                generator designed to target domain
+                                models. It's crucial for Kitanda
+                                because we use an intensively <a
+                                href="http://en.wikipedia.org/wiki/Domain-driven_design">domain
+                                driven</a> approach to software
+                                engineering, resulting in a very large
+                                number of domain specific
+                                <i>languages</i>. Dogen was created to
+                                make the modeling process simpler: the
+                                user creates a domain model using a
+                                UML tool and Dogen uses it to generate
+                                its source code representation. The
+                                generated code contains most of the
+                                services required from a typical C++
+                                domain object such as serialisation,
+                                hashing, streaming and so on.
+
+                                <br/><br/>
+
+                                The main objective of creating a
+                                domain generator is to avoid having to
+                                manually maintain a significant amount
+                                of trivial code; this not only speeds
+                                up the development process but it also
+                                improves quality as programmers do not
+                                tend to perform repetitive tasks
+                                terribly well.  We developed our own
+                                domain generator because we could not
+                                find one that fitted our requirements
+                                - open source or otherwise.
+
+                                <br/><br/>
+
+                                The use of Dogen is a key aspect for our process of fast development in C++.
+                                <br/><br/>
+
+                                Note that Dogen is specifically
+                                tailored for our needs and as such it
+                                is not a general purpose domain
+                                generator. We are, however, wiling to
+                                accept any patches for functionality
+                                not directly required by us.
+                            </div>
+                            
+                            <div class="row-fluid downloadbox">
+                                <a href="https://github.com/kitanda/dogen/zipball/master"
+                                   class="btn btn-primary btn-large" id="downloadzip">Download Zip</a>
+                                <a href="https://github.com/kitanda/dogen/tarball/master"
+                                   class="btn btn-primary btn-large" id="downloadtar">Download Tar</a>
+                                <a href="https://github.com/kitanda/dogen"
+                                   class="btn btn-primary btn-large" id="github">View Source</a>
+                                <a href="http://kitanda.linkpc.net/cdash/index.php?project=dogen"
+                                   class="btn btn-primary btn-large" id="cdash">CI Dashboard</a>
+                                <a href="http://kitanda.linkpc.net/org/doxygen/dogen"
+                                   class="btn btn-primary btn-large" id="doxygen">API Documentation</a>
+                            </div>
+
+                            <h3>Architecture</h3>
+                            
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th class="cell_190"><strong>Component</strong></th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="cell_190">Front-end</td>
+                                        <td>
+                                            Reads documents generated
+                                            by a <a
+                                            href="http://en.wikipedia.org/wiki/Unified_Modeling_Language">UML</a>
+                                            graphical tool. At present
+                                            we are only targeting <a
+                                            href="https://live.gnome.org/Dia">Dia</a>,
+                                            the Gnome diagram tool,
+                                            because its complexity sufices
+                                            our needs. However,
+                                            the front-end is designed
+                                            to be extended to support
+                                            other formats such as <a
+                                            href="http://en.wikipedia.org/wiki/XMI">XMI</a>.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell_190">Middle-end</td>
+                                        <td>
+                                            Intermediate
+                                            representation of the
+                                            domain model, designed
+                                            with domain generation in
+                                            mind. We created the
+                                            Simplified Modeling
+                                            Language (SML) for this, a
+                                            bare-bones meta-model
+                                            inspired by <a
+                                            href="http://www.eclipse.org/modeling/emf/">EMF's</a>
+                                            ECore.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell_190">Back-end</td>
+                                        <td>
+                                            Outputs a source code
+                                            representation of the
+                                            domain model in any of the
+                                            supported programming
+                                            languages (<e>grammars</e>
+                                            in Dogen speak). At
+                                            present we only support
+                                            C++-11 but SQL is on our
+                                            road map.
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>Milestones</h3>
+                        <div class="row-fluid span12">
+                            <div class="square-unit green-unit">
+                                <div class="square-unit-content">
+                                    Setup the development infrastructure
+                                </div>
+                            </div>
+                            <div class="gray-description span9">
+                                Setup the git repositories at <a
+                                href="https://github.com/kitanda/dogen">GitHub</a>.
+                                Setup Continuous Integration (CI) on
+                                <a
+                                href="http://kitanda.linkpc.net/cdash/index.php?project=dogen">CDash</a>
+                                across all the supported platforms -
+                                including build machines, build
+                                agents, <a
+                                href="https://github.com/kitanda/pfh">scripts</a>,
+                                etc. Finally, create the agile
+                                bookkeeping infrastructure to manage
+                                sprints, stories, etc.
+                            </div>
+                        </div>
+                        
+                        <div class="row-fluid span12">
+                            <div class="square-unit green-unit">
+                                <div class="square-unit-content">
+                                    Create the foundations for reading
+                                    Dia diagrams
+                                </div>
+                            </div>
+                            <div class="gray-description span9">
+                                Create the code infrastructure
+                                required to parse the XML produced by
+                                <a
+                                href="https://live.gnome.org/Dia">Dia</a>
+                                and to convert it into our internal
+                                representation of their model. Add
+                                transformation code that can translate
+                                the Dia model into SML.
+                            </div>
+                        </div>
+
+                        <div class="row-fluid span12">
+                            <div class="square-unit green-unit">
+                                <div class="square-unit-content">
+                                    Create the foundations for C++-11
+                                    code generation
+                                </div>
+                            </div>
+                            <div class="gray-description span9">
+                                Add support for C++-11 code
+                                generation, including the main
+                                <i>facets</i>: serialisation, hashing
+                                and streaming. Create a command line
+                                driver with required options. At this
+                                stage Dogen establishes a full
+                                pipeline from drawing to valid code
+                                generation - a significant advancement
+                                in the architecture. It is producing
+                                compilable and testable code.
+                            </div>
+                        </div>
+                        
+                        <div class="row-fluid span12">
+                            <div class="square-unit yellow-unit">
+                                <div class="square-unit-content">
+                                    Add support for single inheritance
+                                </div>
+                            </div>
+                            <div class="gray-description span9">
+                                Inheritance relationships described in
+                                UML diagrams need to be carried
+                                through to C++-11. Support for <a
+                                href="http://en.wikipedia.org/wiki/Multiple_inheritance">multiple
+                                inheritance</a> is not be part of this
+                                task - it will only be implemented
+                                when we find a domain model that
+                                requires it.
+
+                                We are currently in the analysis
+                                phase for this feature.
+                            </div>
+                        </div>
+                        
+                        <div class="row-fluid span12">
+                            <div class="square-unit yellow-unit">
+                                <div class="square-unit-content">
+                                    Add support for composition
+                                </div>
+                            </div>
+                            <div class="gray-description span9">
+                                Composition relationships described in
+                                UML diagrams need to be carried
+                                through to C++-11. Once this task is
+                                implemented Dogen will be able to
+                                express all the structural features
+                                required for Kitanda.
+
+                                We are currently in the analysis
+                                phase for this feature.
+                            </div>
+                        </div>
+                        
+                        <div class="row-fluid span12">
+                            <div class="square-unit red-unit">
+                                <div class="square-unit-content">
+                                    Add initial support for the STL
+                                    model
+                                </div>
+                            </div>
+                            <div class="gray-description span9">
+                                Once implemented, Dogen will be able
+                                to correctly interpret the usage of
+                                most common STL classes used in domain
+                                modeling such as std::string, STL
+                                containers, smart pointers, etc.
+
+                                Work has not yet started for this
+                                feature.
+                            </div>
+                        </div>
+                        
+                        <div class="row-fluid span12">
+                            <div class="square-unit red-unit">
+                                <div class="square-unit-content">
+                                    Add initial support for the Boost
+                                    model
+                                </div>
+                            </div>
+                            <div class="gray-description span9">
+                                Once implemented, Dogen will be able
+                                to correctly interpret the usage of
+                                most common Boost classes used in
+                                domain modeling such as Boost
+                                containers, smart pointers, etc.
+
+                                Work has not yet started for this
+                                feature.
+                            </div>
+                        </div>
+                        
+                        <div class="row-fluid span12">
+                            <div class="square-unit yellow-unit">
+                                <div class="square-unit-content">
+                                    Support for SQL generation
+                                </div>
+                            </div>
+                            <div class="gray-description span9">
+                                Dogen will support the creation of
+                                special-purpose domain models that
+                                have <a
+                                href="http://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD</a>
+                                support, allowing the persistence of
+                                domain objects on a relational
+                                database. The generated code is the
+                                SQL required to create and drop
+                                tables, schemas, etc - it is the
+                                relational representation of the
+                                domain. <a
+                                href="http://en.wikipedia.org/wiki/PostgreSQL">Postgres</a>
+					  is our database of choice.
+                                
+                                The design work has been carried out
+                                for this feature, and initial
+                                implementation has started.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Dogen Milestones -->
+                    
+                    <!-- Start of Dirien project description -->
+                    <div class="collapse indent" id="second">
+                        <div class="row-fluid">
+                            <h2>Dirien</h2>
+                            <hr/>
+
+                            <div class="row-fluid" id="dirien_description">
+                                <div class="gray-description">
+                                    <strong>Dirien</strong> - the
+                                    distributed risk engine - is
+                                    designed to augment quantitative
+                                    analysis libraries such as <a
+                                    href="http://quantlib.org/index.shtml">Quantlib</a>
+                                    with all the required facilities
+                                    needed by production systems:
+                                    portfolio support, result
+                                    aggregation, distributed
+                                    processing (map/reduce), scenario
+                                    analysis and much more.
+                                </div>
+                            </div>
+
+                            <h3>Architecture</h3>
+                            
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th class="cell_190"><strong>Component</strong></th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="cell_190">Risk domain model</td>
+                                        <td>
+                                            Definition of the domain
+                                            language required to model
+                                            risk, with entities such
+                                            as instruments,
+                                            portfolios, term
+                                            structures, results
+                                            (Greeks), etc. The risk
+                                            domain model is based on
+                                            the domain model created
+                                            by <a
+                                            href="http://quantlib.org/index.shtml">Quantlib</a>
+                                            but extended with
+                                            high-level constructs that
+                                            are not needed at the
+                                            pricing engine level.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell_190">Quant engine wrapper API</td>
+                                        <td>
+                                            Exposes a common API for
+                                            Dirien to access the
+                                            pricing engines provided
+                                            by different quantitative
+                                            libraries. Also includes a
+                                            domain model that defines
+                                            the available
+                                            configuration for each
+                                            wrapped library
+                                            (e.g. supported models,
+                                            instruments and Greeks for
+                                            each model,
+                                            etc). Initially we will
+                                            provide support for <a
+                                            href="http://quantlib.org/index.shtml">Quantlib</a>.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell_190">Valuator</td>
+                                        <td>
+                                            The core of the risk
+                                            engine, the Valuator makes
+                                            use of the risk domain
+                                            model and the Quant engine
+                                            wrapper API to calculate
+                                            results for sets of
+                                            instruments. The Valuator
+                                            works on a single
+                                            dimension of risk.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell_190">Risk space</td>
+                                        <td>
+                                            The risk space domain
+                                            model augments the risk
+                                            model with support for
+                                            multi-dimensional scenario
+                                            analysis. It defines the
+                                            risk space - an hyperspace
+                                            in which objects of the
+                                            risk domain model exist; a
+                                            language to define sparse
+                                            representations of the
+                                            risk space; and containers
+                                            that instantiate those
+                                            representations.
+
+                                            The library also provides
+                                            the transformations
+                                            required to move risk
+                                            domain model objects in
+                                            risk space.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell_190">Distributed and Map/Reduce</td>
+                                        <td>
+                                            This is the service tier
+                                            of Dirien, with the
+                                            traditional client/server
+                                            separation: the client is
+                                            responsible for submitting
+                                            requests for valuation and
+                                            the server is responsible
+                                            for producing the
+                                            valuation
+                                            results. Internally the
+                                            server makes use of a
+                                            map/reduce approach: jobs
+                                            are split into multiple
+                                            batches according to
+                                            batching algorithms;
+                                            workers in the cloud
+                                            perform the number
+                                            crunching - each of which
+                                            running a Valuator;
+                                            finally the results are
+                                            aggregated and sent back
+                                            to the client. The
+                                            batching takes into
+                                            account multi-dimensional
+                                            scenarios, via the risk
+                                            space library.
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>Milestones</h3>
+                                    
+                        <div class="row-fluid span12">
+                            <div class="square-unit yellow-unit">
+                                <div class="square-unit-content">
+                                    Create the foundations for the
+                                    risk domain model
+                                </div>
+                            </div>
+                            <div class="gray-description span9">
+                                Initially we want to create a minimal
+                                domain model required to value a
+                                simple set of instruments such as
+                                vanilla options. This domain model
+                                includes entities such as term
+                                structures and instruments.
+
+                                The design work has started for this
+                                feature.
+                            </div>
+                        </div>
+                        
+                        <div class="row-fluid span12">
+                            <div class="square-unit red-unit">
+                                <div class="square-unit-content">
+                                    Create the foundations for the
+                                    Valuer and wrappers
+                                </div>
+                            </div>
+                            <div class="gray-description span9">
+                                The objective is to define a
+                                configuration model for QuantLib,
+                                exposing a small number of pricing
+                                engines. We then need to implement
+                                functionality in both the Valuer and
+                                the wrapper API to value a set of
+                                instruments.
+                                
+                                The design work has started for this
+                                feature.
+                            </div>
+                        </div>
             
-   <footer>
-       <p>&copy; Kitanda Development Group 2012</p>
-   </footer>
+                        <div class="row-fluid span12">
+                            <div class="square-unit red-unit">
+                                <div class="square-unit-content">
+                                    Create the client/server foundations
+                                </div>
+                            </div>
+                            <div class="gray-description span9">
+                                Define a protocol that enables clients
+                                to send requests for valuations to the
+                                server; wrap the valuation
+                                functionality thus far created in a
+                                server which is capable of returning
+                                results.
+                                
+                                This feature has not been started yet.
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- product_milestone_group -->
+            </div>  <!-- project_milestone_info -->
+        </div> <!-- container -->
+
+        <hr/>
+            
+        <footer>
+            <p>&copy; Kitanda Development Group 2012</p>
+        </footer>
+    </div>
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../bootstrap/js/jquery.js"></script>
     <script src="../bootstrap/js/bootstrap.js"></script>
+    <script>
+        $(function () {
+           $("#dogenicon").popover({trigger: 'hover'}).click(
+              function(){
+                 $(this).popover('hide');
+              }
+           )
+        });
+    </script>
+    <script>  
+        $(function () {
+           $("#dirienicon").popover({trigger: 'hover'}).click(
+              function(){
+                 $(this).popover('hide');
+              }
+           )
+        });
+    </script>
   </body>
 </html>
