@@ -280,11 +280,13 @@ img {
   border-radius: 4px;
 }
 
-
 .project_application_icons {
   text-align: center;
 }
 
+.application_icon {
+  padding-bottom: 20px;
+}
 
 .milestone_icon {
   text-align: center;
