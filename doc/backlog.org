@@ -35,6 +35,20 @@ If merging of feeds is possible we could also have a build feed?
 
 http://kitanda.linkpc.net/cdash/rss/SubmissionRSSdogen.xml
 
+MC: A bundle was created in Google reader to merge the feeds:
+
+http://www.google.com/reader/bundle/user%2F00027928396749601136%2Fbundle%2FKitanda
+
+Bundle with kitanda feeds
+
+"Kitanda" is a collection of blogs and websites hand-selected by your
+friend on a particular topic or interest. You can keep up to date with
+them all in one place by subscribing in Google Reader.
+
+Description: Development activity for Kitanda
+
+Preview "Kitanda" in Google Reader
+
 *** Fix Kitanda's logo in Gravatar
 
 The dimensions of the logo in Gravatar do not work very well with our
