@@ -374,12 +374,13 @@ td img{
   border-top: 1px solid #dddddd;
 }
 
-/*
-.table td {
-  padding: 0px;
-  line-height: 0px;
-  text-align: left;
-  vertical-align: middle;
-  border-top: 1px solid #dddddd;
+.modal {
+    width: 885px;
+    left: 36%;
+    right: 36%;
+    margin-top: -300px;
 }
-*/
+
+.modal-body {
+  max-height: 480px;
+}
