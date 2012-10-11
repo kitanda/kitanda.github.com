@@ -375,12 +375,12 @@ td img{
 }
 
 .modal {
-    width: 885px;
+    width: 890px;
     left: 36%;
     right: 36%;
     margin-top: -300px;
 }
 
 .modal-body {
-  max-height: 480px;
+  max-height: 490px;
 }
