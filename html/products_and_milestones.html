@@ -121,6 +121,15 @@
                              rel="popover" id="dirienicon" title="<strong>Dirien</strong>" data-content="Dirien is Kitanda's distributed risk engine. Click here for a summary of the architecture and milestones on development."/>
                     </div>
 
+                    <div class="row-fluid milestone_icon" id="creris_row">
+                        <img src="../images/application_creris_no_shaddow.png" alt="Creris Application Icon" class="application_icon"
+                             data-toggle="collapse" data-target="#third" data-parent="#project_milestone_info"
+                             rel="popover" id="crerisicon"
+                             title="<strong>Creris</strong>"
+                             data-content="Creris is Kitanda's
+                             distributed credit risk engine. Click here for a summary of the architecture and milestones on development."/>
+                    </div>
+
                 </div> <!-- project_application_icons -->
 
                 <div class="accordion-group span10" id="product_milestone_group">
@@ -535,33 +544,47 @@
                                             risk space.
                                         </td>
                                     </tr>
+
                                     <tr>
-                                        <td class="cell_190">Distributed and Map/Reduce</td>
+
+                                    <td class="cell_190">Processor</td>
                                         <td>
-                                            This is the service tier
-                                            of Dirien, with the
-                                            traditional client/server
-                                            separation: the client is
-                                            responsible for submitting
+                                            One of the two Dirien
+                                            services, the processor
+                                            receives requests for
+                                            valuation, reads all
+                                            the required external data
+                                            and passes it to the
+                                            Valuator. It then takes
+                                            the result and sends it
+                                            back to the caller,
+                                            normally a Batcher.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="cell_190">Batcher</td>
+                                        <td>
+                                            The service responsible
+                                            for Map/Reduce, the
+                                            batcher takes incoming
                                             requests for valuation and
-                                            the server is responsible
-                                            for producing the
-                                            valuation
-                                            results. Internally the
-                                            server makes use of a
-                                            map/reduce approach: jobs
-                                            are split into multiple
-                                            batches according to
-                                            batching algorithms;
-                                            workers in the cloud
+                                            allocates them to the
+                                            available processors.
+                                            Internally the server
+                                            makes use of a map/reduce
+                                            approach: jobs are split
+                                            into multiple batches
+                                            according to batching
+                                            algorithms; processors
                                             perform the number
-                                            crunching - each of which
-                                            running a Valuator;
-                                            finally the results are
-                                            aggregated and sent back
-                                            to the client. The
-                                            batching takes into
-                                            account multi-dimensional
+                                            crunching - by delegating
+                                            to a Valuator; finally the
+                                            results are aggregated and
+                                            sent back to the
+                                            client. The batching takes
+                                            into account
+                                            multi-dimensional
                                             scenarios, via the risk
                                             space library.
                                         </td>
@@ -632,12 +655,176 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Start of Creris project description -->
+                    <div class="collapse indent" id="third">
+                        <div class="row-fluid">
+                            <h2>Creris</h2>
+                            <hr/>
+
+                            <div class="row-fluid" id="dirien_description">
+                                <div class="gray-description">
+                                    <strong>Creris</strong> - the
+                                    distributed credit risk engine -
+                                    is a pure C++ implementation of
+                                    the specification
+                                    for <a href="http://www.publicsectorcredit.org/pscf.html">PSCF
+                                    - the Public Sector Credit
+                                    Framework</a>, a revolutionary way
+                                    for rating sovereigns, designed
+                                    by <a href="http://www.linkedin.com/pub/marc-joffe/4/480/516">
+                                    Marc Joffe</a>.
+                                </div>
+                            </div>
+
+                            <h3>Architecture</h3>
+                            
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th class="cell_190"><strong>Component</strong></th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="cell_190">Credit risk domain model</td>
+                                        <td>
+                                            Definition of the domain
+                                            language required to model
+                                            credit risk in general,
+                                            and sovereign risk in
+                                            particular, with entities
+                                            such as time series,
+                                            ratings tables,
+                                            adjustments, etc. The
+                                            credit risk domain model
+                                            is very closely based on the domain
+                                            model exposed by PSCF
+                                            but extended with
+                                            high-level constructs for
+                                            the kitanda framework.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell_190">Evaluator</td>
+                                        <td>
+                                            The core of the credit risk
+                                            engine, the Evaluator makes
+                                            use of the credit risk domain
+                                            model to calculate
+                                            results for credit risk
+                                            requests. It will parse
+                                            arithmetic expressions in
+                                            time series, run a
+                                            number of Monte-Carlo
+                                            simulations and combine
+                                            those to produce a credit
+                                            risk evaluation including
+                                            the expected rating.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell_190">Processor</td>
+                                        <td>
+                                            One of the two Creris
+                                            services, the processor
+                                            receives requests for
+                                            credit ratings, reads all
+                                            the required external data
+                                            and passes it to the
+                                            Evaluator. It then takes
+                                            the result and sends it
+                                            back to the caller.
+                                        </td>
+                                    <tr>
+                                        <td class="cell_190">Batcher</td>
+                                        <td>
+                                            The service responsible
+                                            for Map/Reduce, the
+                                            batcher takes incoming
+                                            requests for credit
+                                            ratings, breaks it down in
+                                            several processor requests
+                                            (depending on the number
+                                            of available processors),
+                                            ships those requests over
+                                            to the processors and then
+                                            reduces the output into a
+                                            single response which can
+                                            then be sent back to the client.
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h3>Milestones</h3>
+                        <div class="row-fluid span12">
+                            <div class="square-unit yellow-unit">
+                                <div class="square-unit-content">
+                                    Create the foundations for the
+                                    credit risk domain model
+                                </div>
+                            </div>
+                            <div class="gray-description span9">
+                                Initially we want to create a minimal
+                                domain model required to produce a
+                                simple credit rating. This domain model
+                                includes entities such as time series,
+                                ratings, adjustments, etc.
+
+                                The design work has started for this
+                                feature.
+                            </div>
+                        </div>
+
+                        <div class="row-fluid span12">
+                            <div class="square-unit red-unit">
+                                <div class="square-unit-content">
+                                    Create the foundations for the
+                                    Evaluator
+                                </div>
+                            </div>
+                            <div class="gray-description span9">
+                                The objective is to define a simple
+                                Evaluator which is able to take in a
+                                request for credit rating and return a
+                                result. This will involve creating all
+                                the different internal layers, but a
+                                lot of them will be mocked.
+
+                                The design work has started for this
+                                feature.
+                            </div>
+                        </div>
+
+                        <div class="row-fluid span12">
+                            <div class="square-unit red-unit">
+                                <div class="square-unit-content">
+                                    Create the client/server foundations
+                                </div>
+                            </div>
+                            <div class="gray-description span9">
+                                Define a protocol that enables clients
+                                to send requests for ratings to the
+                                processor; wrap the evaluation
+                                functionality thus far created in a
+                                processor which is capable of returning
+                                results.
+
+                                This feature has not been started yet.
+                            </div>
+                        </div>
+                    </div>
+
                 </div> <!-- product_milestone_group -->
             </div>  <!-- project_milestone_info -->
         </div> <!-- container -->
 
         <hr/>
-            
+
         <footer>
             <p>&copy; Kitanda Development Group 2012</p>
         </footer>
