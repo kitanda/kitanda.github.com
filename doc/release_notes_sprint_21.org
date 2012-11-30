@@ -1,0 +1,42 @@
+#+title: Release Notes for Sprint 21
+#+options: date:nil toc:nil author:nil num:nil
+#+todo: ANALYSIS IMPLEMENTATION TESTING | COMPLETED CANCELLED
+#+tags: story(s) epic(e) task(t) note(n) spike(p)
+
+* Release Notes
+
+This file contains all stories that were worked on sprint 21.
+
+** Development Stories Implemented
+
+*** COMPLETED Add github buttons to product page:
+
+- Fork me on github
+- Download tar/and zip
+
+Example page: http://fix8.org/
+
+*** COMPLETED Add CDash buttons to product page
+
+We could have a direct link to the CI for each product.
+
+http://kitanda.linkpc.net/cdash/index.php?project=dogen
+
+*** COMPLETED Add API buttons to product page
+
+We should have a link to the doxygen documentation in the product
+page:
+
+http://kitanda.linkpc.net/org/doxygen/dogen/html/index.html
+
+*** COMPLETED Fix Kitanda's logo in Gravatar
+
+The dimensions of the logo in Gravatar do not work very well with our
+logo. We need to create a logo that fits this rectangular shape.
+
+*** COMPLETED Add icons to landing page
+
+- Github icon
+- Open Source icon (OSI)
+
+** Deprecated Development Stories

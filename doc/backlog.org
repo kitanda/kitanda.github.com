@@ -7,26 +7,6 @@ This file contains all stories that haven't been assigned to a sprint.
 *** Add kitanda.co.uk emails to about page
 *** Add entries for all Kitanda staff on about page
 *** Create Google Groups for development and support
-*** Add github buttons to product page:
-
-- Fork me on github
-- Download tar/and zip
-
-Example page: http://fix8.org/
-
-*** Add CDash buttons to product page
-
-We could have a direct link to the CI for each product.
-
-http://kitanda.linkpc.net/cdash/index.php?project=dogen
-
-*** Add API buttons to product page
-
-We should have a link to the doxygen documentation in the product
-page:
-
-http://kitanda.linkpc.net/org/doxygen/dogen/html/index.html
-
 *** Consider adding a commit feed to product page
 
 RSS: https://github.com/kitanda/dogen/commits/master.atom
@@ -48,13 +28,3 @@ them all in one place by subscribing in Google Reader.
 Description: Development activity for Kitanda
 
 Preview "Kitanda" in Google Reader
-
-*** Fix Kitanda's logo in Gravatar
-
-The dimensions of the logo in Gravatar do not work very well with our
-logo. We need to create a logo that fits this rectangular shape.
-
-*** Add icons to landing page
-
-- Github icon
-- Open Source icon (OSI)
