@@ -13,7 +13,7 @@ RSS: https://github.com/kitanda/dogen/commits/master.atom
 
 If merging of feeds is possible we could also have a build feed?
 
-http://kitanda.linkpc.net/cdash/rss/SubmissionRSSdogen.xml
+http://hedgr.co.uk/cdash/rss/SubmissionRSSdogen.xml
 
 MC: A bundle was created in Google reader to merge the feeds:
 
